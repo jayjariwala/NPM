@@ -1,0 +1,159 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'git-it' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'git-it', null ]
+5 verbose cache add name=undefined spec="git-it" args=["git-it",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'git-it',
+6 verbose parsed url   path: 'git-it',
+6 verbose parsed url   href: 'git-it' }
+7 silly lockFile d6dba06f-git-it git-it
+8 verbose lock git-it /home/jay/.npm/d6dba06f-git-it.lock
+9 silly lockFile d6dba06f-git-it git-it
+10 silly lockFile d6dba06f-git-it git-it
+11 verbose addNamed [ 'git-it', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 941e117c-git-it git-it@
+14 verbose lock git-it@ /home/jay/.npm/941e117c-git-it.lock
+15 silly addNameRange { name: 'git-it', range: '*', hasData: false }
+16 verbose url raw git-it
+17 verbose url resolving [ 'https://registry.npmjs.org/', './git-it' ]
+18 verbose url resolved https://registry.npmjs.org/git-it
+19 info trying registry request attempt 1 at 13:37:20
+20 verbose etag "CNFN226B7I06XI08A2PUQU6HS"
+21 http GET https://registry.npmjs.org/git-it
+22 http 304 https://registry.npmjs.org/git-it
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Thu, 12 May 2016 17:37:21 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=300',
+23 silly registry.get     etag: '"CNFN226B7I06XI08A2PUQU6HS"',
+23 silly registry.get     age: '0',
+23 silly registry.get     connection: 'keep-alive',
+23 silly registry.get     'x-served-by': 'cache-iad2128-IAD',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1463074641.595811,VS0,VE192',
+23 silly registry.get     vary: 'Accept-Encoding' } ]
+24 verbose etag git-it from cache
+25 silly addNameRange number 2 { name: 'git-it', range: '*', hasData: true }
+26 silly addNameRange versions [ 'git-it',
+26 silly addNameRange   [ '0.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.0.4',
+26 silly addNameRange     '1.0.5',
+26 silly addNameRange     '1.0.6',
+26 silly addNameRange     '1.1.7',
+26 silly addNameRange     '1.1.8',
+26 silly addNameRange     '1.1.9',
+26 silly addNameRange     '1.2.0',
+26 silly addNameRange     '1.2.1',
+26 silly addNameRange     '1.2.2',
+26 silly addNameRange     '1.2.3',
+26 silly addNameRange     '1.2.4',
+26 silly addNameRange     '1.3.4',
+26 silly addNameRange     '1.3.5',
+26 silly addNameRange     '1.3.6',
+26 silly addNameRange     '1.3.7',
+26 silly addNameRange     '1.3.8',
+26 silly addNameRange     '1.3.9',
+26 silly addNameRange     '1.4.0',
+26 silly addNameRange     '1.5.0',
+26 silly addNameRange     '1.6.0',
+26 silly addNameRange     '1.6.2',
+26 silly addNameRange     '1.6.3',
+26 silly addNameRange     '1.6.4',
+26 silly addNameRange     '1.6.5',
+26 silly addNameRange     '1.6.7',
+26 silly addNameRange     '1.6.8',
+26 silly addNameRange     '1.6.9' ] ]
+27 verbose addNamed [ 'git-it', '1.6.9' ]
+28 verbose addNamed [ '1.6.9', '1.6.9' ]
+29 silly lockFile cc8667aa-git-it-1-6-9 git-it@1.6.9
+30 verbose lock git-it@1.6.9 /home/jay/.npm/cc8667aa-git-it-1-6-9.lock
+31 silly lockFile cc8667aa-git-it-1-6-9 git-it@1.6.9
+32 silly lockFile cc8667aa-git-it-1-6-9 git-it@1.6.9
+33 silly lockFile 941e117c-git-it git-it@
+34 silly lockFile 941e117c-git-it git-it@
+35 silly resolved [ { name: 'git-it',
+35 silly resolved     version: '1.6.9',
+35 silly resolved     description: 'Terminal app for learning Git and GitHub',
+35 silly resolved     main: 'index.js',
+35 silly resolved     bin: { 'git-it': './git-it.js' },
+35 silly resolved     scripts:
+35 silly resolved      { build: 'node guide/buildpages.js && node guide/buildpages.js zhtw',
+35 silly resolved        'build-english': 'node guide/buildpages.js',
+35 silly resolved        'build-zhtw': 'node guide/buildpages.js zhtw',
+35 silly resolved        'copy-guide': 'cp -r ./guide ./.guide',
+35 silly resolved        'git-co': 'git checkout gh-pages && git reset --hard origin/gh-pages',
+35 silly resolved        'paste-guide': 'cp -r ./.guide/* .. && rm -rf ./.guide',
+35 silly resolved        'git-stage': 'npm run copy-guide && npm run git-co && npm run paste-guide',
+35 silly resolved        'git-commit': 'git add -A . && git commit -a -m \'gh-pages update\'',
+35 silly resolved        'git-push': 'git push origin gh-pages --force && git checkout master',
+35 silly resolved        deploy: 'npm run git-stage && npm run git-commit && npm run git-push' },
+35 silly resolved     repository: { type: 'git', url: 'https://github.com/jlord/git-it.git' },
+35 silly resolved     author: { name: 'Jessica Lord' },
+35 silly resolved     license: 'BSD-2-Clause',
+35 silly resolved     bugs: { url: 'https://github.com/jlord/git-it/issues' },
+35 silly resolved     dependencies:
+35 silly resolved      { 'concat-stream': '~1.2.1',
+35 silly resolved        ecstatic: '^0.5.4',
+35 silly resolved        'github-oauth': '0.0.4',
+35 silly resolved        glob: '^3.2.11',
+35 silly resolved        handlebars: '^2.0.0-alpha.4',
+35 silly resolved        marked: '^0.3.2',
+35 silly resolved        request: '~2.30.0',
+35 silly resolved        'workshopper-jlord': '^0.0.6',
+35 silly resolved        cheerio: '~0.17.0' },
+35 silly resolved     readme: '# Git-it\n\n![ss](https://raw.githubusercontent.com/jlord/git-it/master/git-it-ss.png)\n\nGit-it 是一個帶領你學習 Git 和 GitHub 的 [workshopper](https://github.com/rvagg/workshopper) 程式。在終端機中執行，帶領使用者經過一個一個的關卡。[nodeschool.io](http://nodeschool.io) 有更多相關的資訊。\n\n---\n\n**開發者文件在請看 [CONTRIBUTING.md](https://github.com/jlord/git-it/blob/master/CONTRIBUTING.md)。**\n\n**將要在一個使用 Git-it 的活動當教練嗎？ 先用用看 Git-it，然後到 [TROUBLESHOOT.md](https://github.com/jlord/git-it/blob/master/TROUBLESHOOT.md) 可以看到一些學員們常會碰到的問題。**\n\n---\n\n## 哈囉！\n\n這個程式會在你的終端機（Mac）或提示指令字元（Windows）中執行。Git-it 中包含很多關卡，每一個關卡會一步步帶領你學習 Git 和 GitHub。這個程式用的是真正現實生活中在寫程式時會用到的「終端機指令」、「Git」、和「GitHub」，中間完全沒有「模擬器」，代表你過程中安裝的軟體、學到的指令、開啟的專案，都將會是立刻就可以使用的技術，而且讓你的[貢獻圖表](https://github.com/blog/1360-introducing-contributions)上真的有個小綠方塊！\n\n![contributions](https://raw.githubusercontent.com/jlord/git-it/master/ghcc.png)\n\n你可以到 [Git-it 的挑戰列表](http://jlord.github.io/git-it/index-zhtw.html)中看到全部的關卡以及說明。\n\n---\n\n#### 你將需要這些程式才能執行 Git-it:\n\n_這是一些程式開發的必需品，全部都是免費的，並且大部分是開源的軟體。_\n\n- **Git**，記錄下所有的修改！\n - 如果你用的是 **Windows，下載 [GitHub for Windows](http://windows.github.com)**，它裡頭就包含了 Git。你可以用 **Git Shell** 作為你的終端機。\n - 如果你用的是 **Mac，下載 [GitHub for Mac](http://mac.github.com)**，它裡頭就包含了 Git，另外你需要到 Preferences > Advanced > 點選 Install Command Line Tools 來安裝指令程式。\n- **Node.js** 是 Git-it 程式撰寫所使用的語言，所以必須要安裝了它才有辦法使用 Git-it。Node.js 是一個伺服端的 JavaScript 引擎（你的電腦就是一個伺服器！），而且它會默默的在背景執行，不需要特別啟動。你可以**[在這裡下載 Node](http://nodejs.org/download/)**（直接選擇 **Windows `.msi`** 或是 **Mac `.pkg`** 的選項）。\n - 如果你本來就有安裝 Node 和 npm，記得要把 npm 更新到 v1.4.3 以上的版本。\n- **文字編輯器** 如果你還沒有這樣的程式，最好安裝一個特別用來寫程式的文字編輯器。這邊提供大家一些選項：[Atom](http://www.atom.io)、[Sublime Text 2](http://www.sublimetext.com/2)、[Textmate](http://macromates.com/download)、[Brackets](http://brackets.io/)。\n- **英文設定**，因為 Git-it 內容目前還是以英文為主，如果沒有特別設定為英文可能造成程式無法運行。如果你電腦的設定不是英文，請到 [TROUBLESHOOT.md](https://github.com/jlord/git-it/blob/master/TROUBLESHOOT.md#system-with-non-english-locale)，頁面最下方有說明該如何設定 Git-it 的語言為英文。\n\n_*Git-it 其實沒有任何關卡需要你「寫程式」，所以如果不想安裝文字編輯器也是沒關係的。每台電腦都有的 TextEdit（Mac）或 Nodepad（Windows）就很足夠了。_\n\n#### 安裝 Git-it\n\n以上的程式都安裝完後，就可以來安裝 Git-it 了。\n\n- 打開你的終端機/Terminal（Mac）或指令提示字元/Cmd（Windows），並把 Git-it 安裝到你的電腦上。[NPM](http://www.npmjs.org)（**包含在 Node.js 裡頭**） 讓你可以用很簡單的指令安裝 Node.js 的各種模組（Git-it 就是一個這樣的模組），像這樣：\n\n```bash\n$ npm install -g git-it\n```\n- _如果這個指令出現「權限不足」之類的錯誤，**試著在指令之前加上 \'sudo\'**:_ `sudo npm install -g git-it`\n- 顯示安裝成功之後，你就可以試著執行 Git-it：\n\n```bash\n$ git-it\n```\n- 這個指令應該會顯示出一個關卡的列表。一切準備就緒囉！你可以選擇第一個關卡，按下 enter，接著就按照提示開始挑戰吧！\n\n#### 運作方式\n\n- 執行 `git-it` 後，就會出現關卡列表，按上下鍵頭 ↑↓ 來選擇關卡，然後按 \'enter\' 進入關卡。\n- 關卡內容出現後，可以看到視窗最下面有個提示可以把教學網頁打開。 _也有一個網頁版本的[教學網頁](http://jlord.github.io/git-it/index-zhtw.html)._\n\n![img](https://raw.githubusercontent.com/jlord/git-it/master/guide-ss.png)\n\n- 跟著教學網頁上面的步驟，在終端機中執行一個個的指令來破關。\n- 當你完成一個關卡，在終端機中打上 `git-it verify` 來確認一切正確。\n- 如果關卡中有步驟沒有達成，Git-it 會出現一些錯誤訊息來告訴你錯在哪邊。\n- 破關後，在執行一次 `git-it` 就會回到關卡列表，進入下一個關卡吧！\n\n**如果你在途中碰到任何問題，[開啟一個 issue](https://github.com/jlord/git-it/issues/new) 問我們，或是看看 [troubleshooting doc](https://github.com/jlord/git-it/blob/master/TROUBLESHOOT.md) 可能已經有解答了。**\n\n---\n\n#### 初學者小提示\n\n**語法段落** 通常長這樣：`$ some code-stuff --here`。前面的 $ 金錢符號意思是這行指令是要輸入在終端機裡頭的，但在輸入指令的時候**不要**包含 $ 的符號。照這個例子來說，你實際上輸入的指令會是 `some code-stuff --here`。\n\n**變數** 會在語法段或中用 `<變數名稱>` 來表示。當你要輸如一行指令的時候，把變數名稱，包含 `<>` 用對的內容取代掉。比如說，一個用來新增資料夾的指令是 `mkdir <資料夾名稱>`，你想要新增一個叫做 \'octocat\' 的資料夾，那叫要打 `mkdir octocat`。\n\n**終端機、命令提示字元** 指的都是同一個東西，就是你在電影上常常看到的黑黑的、滿是數字和英文字的視窗。你可以透過文字指令，用它來和電腦溝通。\n\n透過終端機可以叫電腦做非常多事情，像是刪除、重新命名、複製、新增檔案和資料夾；來回傳送檔案到各個不同的主機（像是把東西傳上 GitHub.com）或是你的電腦（也是一個主機！）。\n',
+35 silly resolved     readmeFilename: 'README-zhtw.md',
+35 silly resolved     _id: 'git-it@1.6.9',
+35 silly resolved     _from: 'git-it@' } ]
+36 info install git-it@1.6.9 into /usr/local/lib
+37 info installOne git-it@1.6.9
+38 info /usr/local/lib/node_modules/git-it unbuild
+39 verbose tar unpack /home/jay/.npm/git-it/1.6.9/package.tgz
+40 silly lockFile 0b912876-sr-local-lib-node-modules-git-it tar:///usr/local/lib/node_modules/git-it
+41 verbose lock tar:///usr/local/lib/node_modules/git-it /home/jay/.npm/0b912876-sr-local-lib-node-modules-git-it.lock
+42 silly lockFile 3870ee18-jay-npm-git-it-1-6-9-package-tgz tar:///home/jay/.npm/git-it/1.6.9/package.tgz
+43 verbose lock tar:///home/jay/.npm/git-it/1.6.9/package.tgz /home/jay/.npm/3870ee18-jay-npm-git-it-1-6-9-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+45 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+45 error   errno: 3,
+45 error   code: 'EACCES',
+45 error   path: '/usr/local/lib/node_modules',
+45 error   fstream_type: 'Directory',
+45 error   fstream_path: '/usr/local/lib/node_modules/git-it',
+45 error   fstream_class: 'DirWriter',
+45 error   fstream_stack:
+45 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+45 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+45 error      'Object.oncomplete (fs.js:107:15)' ] }
+46 error Please try running this command again as root/Administrator.
+47 error System Linux 3.19.0-32-generic
+48 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "git-it"
+49 error cwd /home/jay/Java Workspace/NPM
+50 error node -v v0.10.25
+51 error npm -v 1.3.10
+52 error path /usr/local/lib/node_modules
+53 error fstream_path /usr/local/lib/node_modules/git-it
+54 error fstream_type Directory
+55 error fstream_class DirWriter
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+59 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+59 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+59 error fstream_stack Object.oncomplete (fs.js:107:15)
+60 verbose exit [ 3, true ]
